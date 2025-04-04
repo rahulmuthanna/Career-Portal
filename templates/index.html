@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <h2 style="text-align: center; width: 100%; margin: 20px auto">
+      WIPRO Application Form
+    </h2>
+
+    <form id="applicationForm">
+      <h3>PERSONAL INFORMATION</h3>
+
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+      </div>
+
+      <div class="form-group">
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName" />
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required />
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">e-mail:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="currentAddress">Current Address:</label><br />
+        <textarea id="currentAddress" name="currentAddress" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="currentCity">City:</label>
+        <input type="text" id="currentCity" name="currentCity" required />
+      </div>
+
+      <div class="form-group">
+        <label for="currentState">State:</label>
+        <input type="text" id="currentState" name="currentState" required />
+      </div>
+
+      <div class="form-group">
+        <label for="currentPIN">PIN:</label>
+        <input type="text" id="currentPIN" name="currentPIN" required />
+      </div>
+
+      <div class="form-group">
+        <label for="currentPhone">Phone (with STD code):</label>
+        <input type="tel" id="currentPhone" name="currentPhone" required />
+      </div>
+
+      <div class="form-group">
+        <label for="permanentAddress">Permanent Address:</label><br />
+        <textarea
+          id="permanentAddress"
+          name="permanentAddress"
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="permanentCity">City:</label>
+        <input type="text" id="permanentCity" name="permanentCity" required />
+      </div>
+
+      <div class="form-group">
+        <label for="permanentState">State:</label>
+        <input type="text" id="permanentState" name="permanentState" required />
+      </div>
+
+      <div class="form-group">
+        <label for="permanentPIN">PIN:</label>
+        <input type="text" id="permanentPIN" name="permanentPIN" required />
+      </div>
+
+      <div class="form-group">
+        <label for="permanentPhone">Phone (with STD code):</label>
+        <input type="tel" id="permanentPhone" name="permanentPhone" required />
+      </div>
+
+      <h3>Family Background (Spouse, Father, Mother, Brothers and Sisters)</h3>
+      <div class="table-container">
+        <table>
+          <tr>
+            <th>Relationship</th>
+            <th>Name</th>
+            <th>Education</th>
+            <th>Age</th>
+            <th>Occupation</th>
+          </tr>
+          <tr>
+            <td>Father</td>
+            <td><input type="text" id="fatherName" name="fatherName" /></td>
+            <td>
+              <input type="text" id="fatherEducation" name="fatherEducation" />
+            </td>
+            <td><input type="number" id="fatherAge" name="fatherAge" /></td>
+            <td>
+              <input
+                type="text"
+                id="fatherOccupation"
+                name="fatherOccupation"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Mother</td>
+            <td><input type="text" id="motherName" name="motherName" /></td>
+            <td>
+              <input type="text" id="motherEducation" name="motherEducation" />
+            </td>
+            <td><input type="number" id="motherAge" name="motherAge" /></td>
+            <td>
+              <input
+                type="text"
+                id="motherOccupation"
+                name="motherOccupation"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Sibling</td>
+            <td><input type="text" id="siblingName" name="siblingName" /></td>
+            <td>
+              <input
+                type="text"
+                id="siblingEducation"
+                name="siblingEducation"
+              />
+            </td>
+            <td><input type="number" id="siblingAge" name="siblingAge" /></td>
+            <td>
+              <input
+                type="text"
+                id="siblingOccupation"
+                name="siblingOccupation"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>
+        EDUCATION (Begin with the most recent qualification and end with Std. X)
+      </h3>
+      <div class="table-container">
+        <table>
+          <tr>
+            <th>Qualification</th>
+            <th>Specialization</th>
+            <th>Name of the Institute</th>
+            <th>Location</th>
+            <th>Month/Year of Passing</th>
+            <th>Aggregate Marks (%)</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="qualification1" name="qualification1" />
+            </td>
+            <td>
+              <input type="text" id="specialization1" name="specialization1" />
+            </td>
+            <td><input type="text" id="institute1" name="institute1" /></td>
+            <td><input type="text" id="location1" name="location1" /></td>
+            <td><input type="text" id="passYear1" name="passYear1" /></td>
+            <td><input type="text" id="marks1" name="marks1" /></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="qualification2" name="qualification2" />
+            </td>
+            <td>
+              <input type="text" id="specialization2" name="specialization2" />
+            </td>
+            <td><input type="text" id="institute2" name="institute2" /></td>
+            <td><input type="text" id="location2" name="location2" /></td>
+            <td><input type="text" id="passYear2" name="passYear2" /></td>
+            <td><input type="text" id="marks2" name="marks2" /></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="qualification3" name="qualification3" />
+            </td>
+            <td>
+              <input type="text" id="specialization3" name="specialization3" />
+            </td>
+            <td><input type="text" id="institute3" name="institute3" /></td>
+            <td><input type="text" id="location3" name="location3" /></td>
+            <td><input type="text" id="passYear3" name="passYear3" /></td>
+            <td><input type="text" id="marks3" name="marks3" /></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="qualification4" name="qualification4" />
+            </td>
+            <td>
+              <input type="text" id="specialization4" name="specialization4" />
+            </td>
+            <td><input type="text" id="institute4" name="institute4" /></td>
+            <td><input type="text" id="location4" name="location4" /></td>
+            <td><input type="text" id="passYear4" name="passYear4" /></td>
+            <td><input type="text" id="marks4" name="marks4" /></td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>Languages Known</h3>
+
+      <div class="form-group">
+        <label for="read">Read:</label>
+        <input type="text" id="read" name="read" />
+      </div>
+      <div class="form-group">
+        <label for="write">Write:</label>
+        <input type="text" id="write" name="write" />
+      </div>
+      <div class="form-group">
+        <label for="speak">Speak:</label>
+        <input type="text" id="speak" name="speak" />
+      </div>
+
+      <h3>ABOUT YOURSELF</h3>
+
+      <div class="form-group">
+        <label for="personalStrengths">Your personal strengths?</label><br />
+        <textarea id="personalStrengths" name="personalStrengths"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="personalImprovements"
+          >Your personal areas of improvement?</label
+        ><br />
+        <textarea
+          id="personalImprovements"
+          name="personalImprovements"
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="careerObjectives">Your career objectives?</label><br />
+        <textarea id="careerObjectives" name="careerObjectives"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="expectationsFromJob"
+          >Your expectations from the job/Wipro?</label
+        ><br />
+        <textarea
+          id="expectationsFromJob"
+          name="expectationsFromJob"
+        ></textarea>
+      </div>
+
+      <h3>ADDITIONAL DETAILS</h3>
+
+      <div class="form-group">
+        <label for="nationality">Nationality:</label>
+        <select id="nationality" name="nationality">
+          <option value="Indian">Indian</option>
+          <option value="Others">Others</option></select
+        ><br /><br />
+      </div>
+
+      <div id="otherNationality" class="hidden form-group">
+        <label for="otherNationalityText"
+          >If Others, Specify Nationality:</label
+        >
+        <input
+          type="text"
+          id="otherNationalityText"
+          name="otherNationalityText"
+        /><br /><br />
+      </div>
+
+      <div class="form-group">
+        <label>Do you have work permit to work in India?</label><br />
+        <div class="radio-inline">
+          <input
+            type="radio"
+            id="workPermitYes"
+            name="workPermit"
+            value="Yes"
+          />
+          <label for="workPermitYes">Yes</label>
+        </div>
+        <div class="radio-inline">
+          <input type="radio" id="workPermitNo" name="workPermit" value="No" />
+          <label for="workPermitNo">No</label>
+        </div>
+        <br /><br />
+      </div>
+
+      <div class="form-group">
+        <label>Do you hold a valid Passport?</label><br />
+        <div class="radio-inline">
+          <input type="radio" id="passportYes" name="passport" value="Yes" />
+          <label for="passportYes">Yes</label>
+        </div>
+        <div class="radio-inline">
+          <input type="radio" id="passportNo" name="passport" value="No" />
+          <label for="passportNo">No</label>
+        </div>
+        <br /><br />
+      </div>
+
+      <div id="passportDetails" class="hidden form-group">
+        <label for="passportNoText">Passport No:</label>
+        <input
+          type="text"
+          id="passportNoText"
+          name="passportNoText"
+        /><br /><br />
+
+        <label for="passportValidTill">Valid till:</label>
+        <input
+          type="date"
+          id="passportValidTill"
+          name="passportValidTill"
+        /><br /><br />
+      </div>
+
+      <div class="form-group">
+        <label>Have you been denied VISA to any country?</label><br />
+        <div class="radio-inline">
+          <input
+            type="radio"
+            id="visaDeniedYes"
+            name="visaDenied"
+            value="Yes"
+          />
+          <label for="visaDeniedYes">Yes</label>
+        </div>
+        <div class="radio-inline">
+          <input type="radio" id="visaDeniedNo" name="visaDenied" value="No" />
+          <label for="visaDeniedNo">No</label>
+        </div>
+        <br /><br />
+      </div>
+
+      <div id="visaDeniedDetails" class="hidden form-group">
+        <label for="visaDeniedText">Details:</label><br />
+        <textarea id="visaDeniedText" name="visaDeniedText"></textarea
+        ><br /><br />
+      </div>
+
+      <div class="form-group">
+        <label>Have you worked on overseas assignments?</label><br />
+        <div class="radio-inline">
+          <input type="radio" id="overseasYes" name="overseas" value="Yes" />
+          <label for="overseasYes">Yes</label>
+        </div>
+        <div class="radio-inline">
+          <input type="radio" id="overseasNo" name="overseas" value="No" />
+          <label for="overseasNo">No</label>
+        </div>
+        <br /><br />
+      </div>
+
+      <div id="overseasDetails" class="hidden form-group">
+        <label for="overseasText"
+          >Details on countries visited and type of visas held:</label
+        ><br />
+        <textarea id="overseasText" name="overseasText"></textarea><br /><br />
+      </div>
+
+      <div class="form-group">
+        <label>Have you attended any selection process at Wipro before?</label
+        ><br />
+        <div class="radio-inline">
+          <input
+            type="radio"
+            id="wiproProcessYes"
+            name="wiproProcess"
+            value="Yes"
+          />
+          <label for="wiproProcessYes">Yes</label>
+        </div>
+        <div class="radio-inline">
+          <input
+            type="radio"
+            id="wiproProcessNo"
+            name="wiproProcess"
+            value="No"
+          />
+          <label for="wiproProcessNo">No</label>
+        </div>
+        <br /><br />
+      </div>
+
+      <div id="wiproProcessDetails" class="hidden form-group">
+        <label for="wiproProcessDivision">Division:</label>
+        <input
+          type="text"
+          id="wiproProcessDivision"
+          name="wiproProcessDivision"
+        /><br /><br />
+
+        <label for="wiproProcessLocation">Location:</label>
+        <input
+          type="text"
+          id="wiproProcessLocation"
+          name="wiproProcessLocation"
+        /><br /><br />
+      </div>
+
+      <div class="form-group">
+        <label>Do you have any relative / friend employed with Wipro?</label
+        ><br />
+        <div class="radio-inline">
+          <input
+            type="radio"
+            id="wiproRelativeYes"
+            name="wiproRelative"
+            value="Yes"
+          />
+          <label for="wiproRelativeYes">Yes</label>
+        </div>
+        <div class="radio-inline">
+          <input
+            type="radio"
+            id="wiproRelativeNo"
+            name="wiproRelative"
+            value="No"
+          />
+          <label for="wiproRelativeNo">No</label>
+        </div>
+        <br /><br />
+      </div>
+
+      <div id="wiproRelativeDetails" class="hidden form-group">
+        <label for="wiproRelativeName">His/her name:</label>
+        <input
+          type="text"
+          id="wiproRelativeName"
+          name="wiproRelativeName"
+        /><br /><br />
+
+        <label for="wiproRelativeDivision">Division/Location:</label>
+        <input
+          type="text"
+          id="wiproRelativeDivision"
+          name="wiproRelativeDivision"
+        /><br /><br />
+      </div>
+
+      <div class="form-group">
+        <label
+          >Have you suffered from any major illness/surgery/accident in the last
+          five years?</label
+        ><br />
+        <div class="radio-inline">
+          <input type="radio" id="illnessYes" name="illness" value="Yes" />
+          <label for="illnessYes">Yes</label>
+        </div>
+        <div class="radio-inline">
+          <input type="radio" id="illnessNo" name="illness" value="No" />
+          <label for="illnessNo">No</label>
+        </div>
+        <br /><br />
+      </div>
+
+      <div id="illnessDetails" class="hidden form-group">
+        <label for="illnessText">Details:</label><br />
+        <textarea id="illnessText" name="illnessText"></textarea><br /><br />
+      </div>
+
+      <div class="form-group">
+        <label
+          >Do you have any commitment to another employer or organization that
+          might affect your employment with us?</label
+        ><br />
+        <div class="radio-inline">
+          <input
+            type="radio"
+            id="commitmentYes"
+            name="commitment"
+            value="Yes"
+          />
+          <label for="commitmentYes">Yes</label>
+        </div>
+        <div class="radio-inline">
+          <input type="radio" id="commitmentNo" name="commitment" value="No" />
+          <label for="commitmentNo">No</label>
+        </div>
+        <br /><br />
+      </div>
+
+      <div class="form-group">
+        <label for="declaration">
+          <input type="checkbox" id="declaration" name="declaration" required />
+          I hereby declare that my statements on this application and on my
+          resume or documents provided by me to Wipro are correct to the best of
+          my knowledge. I acknowledge and agree that providing any false
+          information may result in a decision not to hire me or if hired, may
+          result in termination of my employment. I give consent to Wipro to
+          institute and conduct a background check to verify the information
+          furnished by me in this form. </label
+        ><br /><br />
+      </div>
+
+      <div class="form-group">
+        <label for="date"> Application Date:</label>
+        <input type="date" id="date" name="date" required /><br /><br />
+      </div>
+
+      <div class="form-group">
+        <label for="place">Place:</label>
+        <input type="text" id="place" name="place" required /><br /><br />
+      </div>
+
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="static/script.js"></script>
+  </body>
+</html>
